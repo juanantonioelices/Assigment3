@@ -1,4 +1,7 @@
 class AttendeesController < ApplicationController
+
+before_filter :authenticate, :except => [:new] 
+
   # GET /attendees
   # GET /attendees.xml
   def index
