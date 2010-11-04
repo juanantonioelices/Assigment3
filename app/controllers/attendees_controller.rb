@@ -1,6 +1,6 @@
 class AttendeesController < ApplicationController
 
-before_filter :authenticate, :except => [:new] 
+before_filter :authenticate, :except => [:new,:create, :show] 
 
   # GET /attendees
   # GET /attendees.xml
